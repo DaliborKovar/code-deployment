@@ -1,0 +1,47 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper-main {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+#wrapper-input {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 320px;
+}
+
+.text {
+    color: white
+}
+
+#smart-id-input {
+    all: unset;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 2px solid #ebbccf;
+}
+
+#smart-id-input:focus {
+    border-color: #CD5888;
+}
+
+#inject-button {
+    all: unset;
+    background-color: #913175;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
