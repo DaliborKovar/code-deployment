@@ -2,6 +2,7 @@ import { trackingScript } from "./smartlookScript.js"
 
 const smartInput = document.querySelector('#smart-id-input')
 const injectButton = document.querySelector('#inject-button')
+const triggerWriter = document.querySelector('#inject-button')
 
 injectButton.addEventListener('click', () => {
     const smartlookId = smartInput.value
@@ -16,3 +17,10 @@ injectButton.addEventListener('click', () => {
       alert('Something went wrong')
     }
 })
+
+triggerWriter.addEventListener('click', () => {
+  smartlook('track', 'eventName')
+})
+
+
+
