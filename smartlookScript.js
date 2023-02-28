@@ -16,10 +16,10 @@ window.smartlook ||
   })(document);
   smartlook('init', ${id}, {
     host: 'manager.beta.smartlook.cloud',
+    enableRecordingOfAutomationFrameworks: true,
     loggingLevel: 1,
     forceSetupData: {
 		recording: {
-      enableRecordingOfAutomationFrameworks: true,
 			disableApi: false,
 			disableForms: false,
 			maskEmails: false,
