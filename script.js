@@ -11,8 +11,11 @@ injectButton.addEventListener('click', () => {
     let text = trackingScript(smartlookId)
     script.text = text
     try {
-      fetch('GET', 'http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/current_releases.json').then((res) => console.log(res))
-    } catch {
+      fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))    } 
+      
+      catch {
       // no op
     }
     try {
