@@ -11,16 +11,18 @@ injectButton.addEventListener('click', () => {
     let text = trackingScript(smartlookId)
     script.text = text
     try {
+      fetch('GET', 'http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/current_releases.json').then((res) => console.log(res))
+    } catch {
+      // no op
+    }
+    try {
       document.getElementsByTagName('head')[0].appendChild(script)
-      alert('Script successfully injected')
+      console.alert('Script successfully injected')
     } catch (_e) {
       alert('Something went wrong')
     }
 })
 
-triggerWriter.addEventListener('click', () => {
-  smartlook('track', 'eventName')
-})
 
 
 
