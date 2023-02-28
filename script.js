@@ -2,7 +2,8 @@ import { trackingScript } from "./smartlookScript.js"
 
 const smartInput = document.querySelector('#smart-id-input')
 const injectButton = document.querySelector('#inject-button')
-const triggerWriter = document.querySelector('#inject-button')
+const triggerWriter = document.querySelector('#trigger-button')
+const pepe = document.querySelector('#pepe')
 
 injectButton.addEventListener('click', () => {
     const smartlookId = smartInput.value
@@ -24,6 +25,10 @@ injectButton.addEventListener('click', () => {
     } catch (_e) {
       alert('Something went wrong')
     }
+})
+
+triggerWriter.addEventListener('click', () => {
+  pepe.classList.add('visible')
 })
 
 
