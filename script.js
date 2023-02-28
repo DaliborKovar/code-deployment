@@ -11,19 +11,13 @@ injectButton.addEventListener('click', () => {
     let script = document.createElement('script')
     let text = trackingScript(smartlookId)
     script.text = text
+
     try {
-      fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))    } 
-      
-      catch {
-      // no op
-    }
-    try {
+      console.log(script)
       document.getElementsByTagName('head')[0].appendChild(script)
-      console.alert('Script successfully injected')
+      console.log('Script successfully injected')
     } catch (_e) {
-      alert('Something went wrong')
+      // no op
     }
 })
 
